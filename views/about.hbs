@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About</title>
+    <style>
+
+        .clout div > div{
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+        .clout img{   
+            position: relative;
+            left: -10px;
+            top: -10px;
+            width: 100%; 
+            margin: 10px;
+        }
+        .clout .dap img{
+            top: -30px;
+        }
+        .clout .mon img{
+            left: -10px;
+        }
+        .clout {
+            margin-top: 30px;
+            display: grid;
+            row-gap: 20px;
+            width: 100%;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            justify-items: center;
+        }
+
+        .clout p{
+            font-weight: bold;
+            text-align: center;
+        }
+        .box {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body class="about-body">
+    <div class="sidebar"></div>
+    <div class="logo-container">
+        <div class="logo">
+            <img src="assets/cafelogo.png">
+        </div>
+
+        <h1 class="name cafe">Cafe <span class="st">St.</span></h1>
+    </div>
+    <h1 style="margin: 0" class = "developers">Developers</h1>
+    
+    <div class="clout">
+        <div>
+            <div class="ju">
+                <img src="assets/jpg/profile2.JPG" alt="ju">
+            </div>
+            <p>Carl Justin Delos Reyes</p>
+        </div>
+        <div>
+            <div class="tashi">
+                <img src="assets/jpg/profile4.JPG" alt="tashi">
+            </div>
+            <p>Atasha Dominique Pidlaoan</p>
+        </div>
+        <div>
+            <div class="lee">
+                <img src="assets/jpg/profile1.jpg" alt="lee">
+            </div>
+            <p>Lee Brien Sandoval</p>
+        </div>
+        <div>
+            <div class="matthew">
+                <img src="assets/jpg/profile3.jpg" alt="matthew">
+            </div>
+            <p>Matthew Sanchez</p>
+        </div>
+    </div>
+    <div class="content">
+        <div>
+            <h1 style="color: #8b623b;">About us</h1>
+            <p>A cafe review web application targeting the cafes in proximity to DLSU, tailored specifically for the Lasallian community at DLSU-Manila. This project is developed as a requisite for the course in Web Application Development (CCAPDEV).</p>
+        </div>
+        <div class="box">
+            <h1>Features</h1>
+            <ul class="list">
+                 <li>View Establishments</li>
+                <ul>
+                    <li>Landing page allows unregistered visitors to view a curated list of establishments.</li>
+                    <li>Each listing provides an overall rating and a brief description for quick insight.</li>
+                </ul>
+                <li>View an Establishment's Reviews</li>
+                <ul>
+                    <li>Access to top reviews for each establishment is available to all visitors.</li>
+                    <li>Users can view more top reviews, with longer reviews being truncated in previews.</li>
+                    <li>Full review details are accessible by clicking on the review.</li>
+                    <li>Review listings include counts of helpful/unhelpful votes from registered users.</li>
+                </ul>
+                <li>Register</li>
+                <ul>
+                    <li>Registration with username, password, avatar, and a short description is required to post reviews.</li>
+                </ul>
+                <li>Login</li>
+                <ul>
+                    <li>Users must log in to post reviews, with an option to remember login details, extending the session.</li>
+                </ul>
+                <li>Logout</li>
+                <ul>
+                    <li>Logging out redirects to the landing page and clears session data, including the remember me status.</li>
+                </ul>
+                <li>View a User Profile</li>
+                <ul>
+                    <li>Public profiles display the username, profile picture, bio, and a selection of the user's latest reviews.</li>
+                </ul>
+                <li>Edit Profile</li>
+                <ul>
+                    <li>Users can customize their profile picture and bio.</li>
+                </ul>
+                <li>Create a Review</li>
+                <ul>
+                    <li>Logged-in users can post detailed reviews with titles, body text, ratings, and media attachments, supporting rich text editing.</li>
+                </ul>
+                <li>Mark as Helpful/Unhelpful</li>
+                <ul>
+                    <li>Reviews can be marked as helpful or unhelpful by logged-in users, limited to one vote per review.</li>
+                </ul>
+                <li>Edit/Delete a Review</li>
+                <ul>
+                    <li>Review authors have the ability to edit or delete their reviews, with edits being clearly indicated.</li>
+                </ul>
+                <li>Search Establishments / Reviews</li>
+                <ul>
+                    <li>A robust search feature allows for the discovery of establishments and reviews by keywords and ratings.</li>
+                </ul>
+                <li>Establishment Owner Response</li>
+                <ul>
+                    <li>Establishment owners can respond to reviews, with their accounts being manually set up by administrators.</li>
+                </ul>
+            </ul>
+        </div>
+        <div class="box">
+            <h1>Node Framework Used</h1>
+            <h3>Express</h3>
+            <ul class="list nb">
+                <li>Express.js, often referred to simply as Express, stands out as a lightweight and adaptable web application framework tailored for Node.js. Renowned for its versatility, it holds a prominent position as one of the foremost frameworks utilized in crafting web applications and APIs using Node.js. Express.js offers a comprehensive suite of resilient features and utilities, streamlining the development journey by facilitating the construction of web servers and managing HTTP requests and responses with ease.</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h1>Packages Used</h1>
+            <ul class="list nb">
+                <li>multer</li>
+                <li>dotenv</li>
+                <li>cors</li>
+                <li>path</li>
+                <li>mongoose</li>
+                <li>body-parser</li>
+                <li>express-handlebars</li>
+                <li>express-session</li>
+                <li>express-validator</li>
+                <li>express-handlebars</li>
+                <li>connect-mongo</li>
+                <li>cookie-parser</li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script type="module">
+        $('document').ready(function(){
+            
+            // SIDEBAR FUNCTIONALITY
+            $('.sidebar').load('/side-bar');
+        });
+    </script>
+</body>
+</html>
